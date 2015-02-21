@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# .screenrcがなければシンボリックリンクを張る
+[ ! -h $HOME/.screenrc ] && ln -s $DOTFILES/screen/screenrc $HOME/.screenrc

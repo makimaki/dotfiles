@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Submodule
+git submodule init
+git submodule update
+
+# .configにfishがなければ作る
+[ ! -d $HOME/.config/fish ] && mkdir -p $HOME/.config/fish
+
+# 1階層目のシンボリックリンク
+TARGETS=($(find $DOTFILES/fish -maxdepth 1 -mindepth 1 | grep -v "\/\." | awk -F/ '{print $NF}'))
+for t in ${TARGETS[@]}
+do
+    [ $t != 'SETUP' ] && [ ! -h $HOME/.config/fish/$t ] && ln -s $DOTFILES/fish/$t $HOME/.config/fish/$t
+done

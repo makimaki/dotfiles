@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# .sbtconfigがなければシンボリックリンクを張る
+[ ! -h $HOME/.sbtconfig ] && ln -s $DOTFILES/sbt/sbtconfig $HOME/.sbtconfig

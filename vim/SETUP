@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# .vimrcがなければシンボリックリンクを張る
+[ ! -h $HOME/.vimrc ] && ln -s $DOTFILES/vim/vimrc $HOME/.vimrc
+
+# .vimディレクトリがなければ作って、中身のシンボリックリンクを張る
+[ ! -d $HOME/.vim ] && mkdir $HOME/.vim
+TARGETS=($(find $DOTFILES/vim/vim -maxdepth 1 -mindepth 1 | grep -v "\/\." | awk -F/ '{print $NF}'))
+for t in ${TARGETS[@]}
+do
+    [ ! -h $HOME/.vim/$t ] && ln -s $DOTFILES/vim/vim/$t $HOME/.vim/$t
+done
+
+vim -c NeoBundleInstall! -c quit

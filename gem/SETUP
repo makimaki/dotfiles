@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# .gemrcがなければシンボリックリンクを張る
+[ ! -h $HOME/.gemrc ] && ln -s $DOTFILES/gem/gemrc $HOME/.gemrc

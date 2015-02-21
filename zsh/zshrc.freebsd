@@ -1,0 +1,20 @@
+### ALIAS ###
+alias vi='vim'
+alias view='vi -R'
+alias man='env LC_CTYPE=ja_JP.eucJP jman'
+alias openssl '/usr/local/bin/openssl'
+
+### PATH ###
+export PATH=/usr/games:/usr/local/sbin:/usr/local/bin:~/bin:/usr/local/openjdk7/bin:/usr/local/texlive/2012/bin/amd64-freebsd:/sbin:/bin:/usr/sbin:/usr/bin:$PATH
+# Java
+export JAVA_HOME="/usr/local/openjdk7"
+export JAVA_OPTS="-Xms256M -Xmx256M -D64 -server -Dfile.encoding=UTF-8 -Djava.awt.headless=true -Duser.language=ja -Duser.region=JP -Dsubsonic.home=/home/subsonic -Dsubsonic.host=music.makimaki.jp -Dsubsonic.port=80 -Dsubsonic.httpsPort=443 -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djava.io.tmpdir=/tmp -Djetty.logs=/var/log/jetty"
+export CLASSPATH=".:$JAVA_HOME/lib/tools.jar"
+export ANT_HOME="/usr/local/share/java/apache-ant"
+export M2_HOME="/usr/local/share/java/maven2"
+# Subsonic文字化け対策
+export LC_CTYPE="ja_JP.UTF-8"
+
+export CPATH=/usr/include:/usr/local/include
+export LIBRARY_PATH=/lib:/usr/lib:/usr/lib/compat:/usr/local/lib
+

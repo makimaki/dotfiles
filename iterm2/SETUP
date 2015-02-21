@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# 設定を一旦クリアしてからカチコム
+defaults delete com.googlecode.iterm2
+defaults import com.googlecode.iterm2 $DOTFILES/iterm2/defaults.plist

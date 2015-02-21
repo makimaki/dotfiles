@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# .tmux.confがなければシンボリックリンクを張る
+[ ! -h $HOME/.tmux.conf ] && ln -s $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
+
+# default.jsonがなくて.configディレクトリの中のpowerlineがなければ作って、中身のシンボリックリンクを張る
+TMUX=$HOME/.config/powerline/themes/tmux
+if [ ! -h $TMUX/default.json ]; then
+    [ ! -d $TMUX ] && mkdir -p $TMUX
+    ln -s $DOTFILES/tmux/default.json $TMUX/default.json
+fi

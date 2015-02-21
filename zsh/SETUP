@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# .zshrcがなければシンボリックリンクを張る
+[ ! -h $HOME/.zshrc ] && ln -s $DOTFILES/zsh/zshrc $HOME/.zshrc
+
+# 環境依存の.zshrc.localがなければファイルを作ってシンボリックリンクを張る
+[ ! -f $DOTFILES/zsh/zshrc.local.$MACHINE ] && touch $DOTFILES/zsh/zshrc.local.$MACHINE
+[ ! -h $HOME/.zshrc.local ] && ln -s $DOTFILES/zsh/zshrc.local.$MACHINE $HOME/.zshrc.local

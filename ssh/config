@@ -1,0 +1,23 @@
+Host server
+    HostName 10.0.1.10
+    User anonymous
+
+Host os00
+    HostName 222.1.205.73
+    User root
+
+Host os01
+    HostName 10.0.2.21
+    User root
+
+Host rpi
+    HostName 10.0.1.81
+    User root
+
+Host pfsense
+    HostName 10.0.1.1
+    User admin
+
+Host honeypot
+    HostName 10.0.0.1
+    User y.sakamaki

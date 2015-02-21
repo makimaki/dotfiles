@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# .dir_colorsがなければシンボリックリンクを張る
+[ ! -h $HOME/.dir_colors ] && ln -s $DOTFILES/dir_colors/dir_colors $HOME/.dir_colors
