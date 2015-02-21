@@ -20,7 +20,7 @@ balias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim'
 export JAVA_HOME=/Library/Java/Home
 set -gx PATH $PATH $JAVA_HOME/bin
 ## デフォルトエンコーディングSJISをUTF-8へ
-export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
+set -gx _JAVA_OPTIONS "-Dfile.encoding=UTF-8"
 
 # man path
 set -gx MANPATH $MANPATH /usr/local/man

@@ -70,13 +70,11 @@ alias p='ping -c 4'
 
 # git
 alias g='git'
-alias oppai='git'
 alias gs='git status -s -b'
 alias gst='git status -s -b'
 alias gst="git log --date=short --max-count=1 --pretty=format:'%Cgreen%h %cd %Cblue%cn%x09%Creset%s' | tail -1; and echo ''; and git status -s -b"
 alias gc='git commit'
 alias gci='git commit -a'
-alias '偽ｔ'=git
 
 # scala
 alias scala='scala -deprecation -unchecked -explaintypes'
