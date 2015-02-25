@@ -21,3 +21,13 @@ Host pfsense
 Host honeypot
     HostName 10.0.0.1
     User y.sakamaki
+
+Host private.github.com
+    HostName github.com
+    PreferredAuthentications publickey
+    User git
+    Port 22
+    TCPKeepAlive yes
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/private_rsa
+

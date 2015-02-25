@@ -196,6 +196,9 @@ NeoBundle 'daisuzu/quickrun-hook-sphinx'
 " renamer
 NeoBundle 'renamer.vim'
 
+" Ansible YAML
+NeoBundle 'chase/vim-ansible-yaml'
+
 " quickrun config
 let g:quickrun_config = {}
 " reST preview

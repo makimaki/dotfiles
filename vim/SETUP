@@ -11,4 +11,4 @@ do
     [ ! -h $HOME/.vim/$t ] && ln -s $DOTFILES/vim/vim/$t $HOME/.vim/$t
 done
 
-vim -c NeoBundleInstall! -c quit
+vim -c NeoBundleInstall!

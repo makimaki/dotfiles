@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Submodule
-git submodule init
-git submodule update
-
 # .configにfishがなければ作る
 [ ! -d $HOME/.config/fish ] && mkdir -p $HOME/.config/fish
 
