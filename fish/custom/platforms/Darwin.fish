@@ -22,12 +22,22 @@ set -gx PATH $HOME/.jenv/bin $PATH
 ## デフォルトエンコーディングSJISをUTF-8へ
 set -gx _JAVA_OPTIONS "-Dfile.encoding=UTF-8"
 
+# nodebrew
+set -gx PATH $HOME/.nodebrew/current/bin $PATH
+set -gx NODEBREW_ROOT=/usr/local/var/nodebrew
+
 # man path
 set -gx MANPATH $MANPATH /usr/local/man
 set -gx INFOPATH $INFOPATH /usr/local/info
+
+# EC2
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.3.0/libexec"
 
 # tmux
 alias tmux='tmuxx'
 alias tm='tmuxx'
 alias tma='tmux attach'
 alias tml='tmux list-window'
+
+# locate
+alias locate='mdfind -name'

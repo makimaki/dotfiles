@@ -87,3 +87,5 @@ alias ex='extract'
 alias ev='vi ~/dotfiles/.vimrc*'
 alias be='bundle exec'
 
+# SSH
+alias ssh="cat ~/.ssh/config.global ~/.ssh/config.local > ~/.ssh/config; eval (which ssh)"

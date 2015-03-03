@@ -29,7 +29,6 @@ set fish_plugins \
         gi \
         local-config \
         msg \
-        node \
         osx \
         php \
         pyenv \

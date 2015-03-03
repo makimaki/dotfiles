@@ -1,0 +1,12 @@
+[extensions]
+pager =
+color =
+shelve =
+graphlog =
+strip =
+
+[pager]
+pager = LESS='-FRSX' less
+
+[ui]
+username = Yuta Sakamaki
