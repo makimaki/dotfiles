@@ -9,4 +9,6 @@ strip =
 pager = LESS='-FRSX' less
 
 [ui]
-username = Yuta Sakamaki
+ignore = ~/.hgignore
+
+%include ~/.hgrc.local

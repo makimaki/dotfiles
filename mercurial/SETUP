@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
-# .hgrcと.hgignoreと.hgattributeがそれぞれなければシンボリックリンクを張る
+# .hgrcがなければシンボリックリンクを張る
 [ ! -h $HOME/.hgrc ] && ln -s $DOTFILES/mercurial/hgrc $HOME/.hgrc
+
+# gitignoreを流用してhgignoreを作る
 #[ ! -h $HOME/.hgignore ] && ln -s $DOTFILES/mercurial/hgignore $HOME/.hgignore
+echo "syntax:glob" > $HOME/.hgignore
+cat $DOTFILES/git/gitignore >> $HOME/.hgignore
 
 # 環境依存の.zshrcがなければファイルを作ってシンボリックリンクを張る
-#[ ! -f $DOTFILES/mercurial/hgrc.$MACHINE ] && cp $DOTFILES/mercurial/hgrc.local $DOTFILES/mercurial/hgrc.$MACHINE
-#[ ! -h $HOME/.hgrc.local ] && ln -s $DOTFILES/mercurial/hgrc.$MACHINE $HOME/.hgrc.local
+[ ! -f $DOTFILES/mercurial/hgrc.$MACHINE ] && cp $DOTFILES/mercurial/hgrc.local $DOTFILES/mercurial/hgrc.$MACHINE
+[ ! -h $HOME/.hgrc.local ] && ln -s $DOTFILES/mercurial/hgrc.$MACHINE $HOME/.hgrc.local
