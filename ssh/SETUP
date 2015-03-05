@@ -4,7 +4,7 @@
 if [ ! -h $HOME/.ssh/config.local ]; then
     [ ! -d $HOME/.ssh ] && mkdir $HOME/.ssh
     [ ! -h $HOME/.ssh/config.global ] && ln -s $DOTFILES/ssh/config.global $HOME/.ssh/config.global
-    touch $HOME/.ssh/config.lobal
+    touch $HOME/.ssh/config.local
 fi
 
 [ -h $HOME/.ssh/config ] && rm $HOME/.ssh/config
