@@ -4,6 +4,7 @@ color =
 shelve =
 graphlog =
 strip =
+rebase =
 
 [pager]
 pager = LESS='-FRSX' less
