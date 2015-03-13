@@ -5,6 +5,7 @@ shelve =
 graphlog =
 strip =
 rebase =
+purge =
 
 [pager]
 pager = LESS='-FRSX' less

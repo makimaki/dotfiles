@@ -8,7 +8,7 @@
 [push]
   default = upstream # defaultのpush先はtrackingしているリポジトリ
 [core]
-  excludesfile = .gitignore
+  excludesfile = ~/.gitignore
   autocrlf = false
   editor = vim
   quotepath = false
