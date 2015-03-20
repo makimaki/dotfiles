@@ -17,6 +17,7 @@ set -g default_user your_normal_user
 set fish_plugins \
         android-sdk \
         archlinux \
+        balias \
         better-alias \
         brew \
         bundler \
