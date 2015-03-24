@@ -17,8 +17,6 @@ balias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim'
 balias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim'
 
 # Java
-## jenv
-set -gx PATH $HOME/.jenv/bin $PATH
 ## デフォルトエンコーディングSJISをUTF-8へ
 set -gx _JAVA_OPTIONS "-Dfile.encoding=UTF-8"
 
