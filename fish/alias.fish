@@ -40,6 +40,13 @@ alias ccat='pygmentize -O style=vim -f console256 -g'
 # less
 alias less='less -r'
 
+# diff
+if type colordiff >/dev/null 2>&1
+  alias diff='colordiff -u'
+else
+  alias diff='diff -u'
+end
+
 # grep
 alias 'gr'='grep --color=auto -ERUIn'
 
