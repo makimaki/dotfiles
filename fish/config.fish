@@ -1,3 +1,8 @@
+# direnv hook.
+if type direnv >/dev/null 2>&1
+  eval (direnv hook fish)
+end
+
 # Path to your oh-my-fish.
 set fish_path $HOME/dotfiles/oh-my-fish
 
