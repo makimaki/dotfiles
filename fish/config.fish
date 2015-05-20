@@ -46,12 +46,6 @@ set fish_plugins \
         tmux \
         theme \
 
-# Path to your custom folder (default path is $FISH/custom)
-set fish_custom $HOME/.config/fish/custom
-
-# Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
-
 # Environments
 . $HOME/.config/fish/env.fish
 
@@ -62,3 +56,11 @@ set fish_custom $HOME/.config/fish/custom
 if test -d $HOME/.vim/powerline
     . $HOME/.vim/powerline/powerline/bindings/fish/powerline.conf
 end
+
+# Path to your custom folder (default path is $FISH/custom)
+set fish_custom $HOME/.config/fish/custom
+
+# Load oh-my-fish configuration.
+. $fish_path/oh-my-fish.fish
+
+
