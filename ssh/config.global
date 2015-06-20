@@ -1,13 +1,18 @@
+Host *
+    ControlMaster auto
+    ControlPath ~/.ssh/master-%r@%h:%p.socket
+    ControlPersist 30m
+
 Host server
     HostName 10.0.1.10
     User anonymous
 
-Host os00
+Host openstack
     HostName 222.1.205.73
     User root
 
-Host os01
-    HostName 10.0.2.21
+Host os02
+    HostName 10.0.2.242
     User root
 
 Host rpi
