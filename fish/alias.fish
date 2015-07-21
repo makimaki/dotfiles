@@ -7,7 +7,7 @@ alias ll="ls -l"
 
 # process
 # alias j="jobs -l"
-alias 'ps?'='pgrep -l -f'
+#alias 'ps?'='pgrep -l -f'
 alias pk='pkill -f'
 
 # du/df
@@ -21,13 +21,13 @@ alias su="su -l"
 # vim
 alias v='vim'
 alias 'src'='exec zsh'
-alias -g V="| vim -"
-alias -g EV="| xargs --verbose sh -c 'vim \"\$@\" < /dev/tty'"
+#alias -g V="| vim -"
+#alias -g EV="| xargs --verbose sh -c 'vim \"\$@\" < /dev/tty'"
 
 # rails
-alias -g RET="RAILS_ENV=test"
-alias -g RED="RAILS_ENV=development"
-alias -g REP="RAILS_ENV=production"
+#alias -g RET="RAILS_ENV=test"
+#alias -g RED="RAILS_ENV=development"
+#alias -g REP="RAILS_ENV=production"
 
 # rake
 alias raket='RAILS_ENV=test rake'
