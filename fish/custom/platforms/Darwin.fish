@@ -18,7 +18,7 @@ balias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim'
 
 # Java
 ## デフォルトエンコーディングSJISをUTF-8へ
-set -gx _JAVA_OPTIONS "-Dfile.encoding=UTF-8"
+#set -gx JAVA_TOOL_OPTIONS "-Dfile.encoding=UTF-8"
 
 # nodebrew
 set -gx PATH $HOME/.nodebrew/current/bin $PATH

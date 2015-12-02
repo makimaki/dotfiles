@@ -7,3 +7,6 @@ end
 
 append-to-path $HOME/bin
 append-to-path $HOME/dotfiles/bin
+
+export GOPATH=$HOME/golang
+export PATH=$PATH:$GOPATH/bin

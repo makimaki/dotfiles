@@ -1,7 +1,9 @@
 Host *
-    ControlMaster auto
-    ControlPath ~/.ssh/master-%r@%h:%p.socket
-    ControlPersist 30m
+    TCPKeepAlive yes
+    IdentitiesOnly yes
+#    ControlMaster auto
+#    ControlPath ~/.ssh/master-%r@%h:%p.socket
+#    ControlPersist 30m
 
 Host server
     HostName 10.0.1.10
@@ -27,12 +29,9 @@ Host honeypot
     HostName 10.0.0.1
     User y.sakamaki
 
-Host private.github.com
-    HostName github.com
-    PreferredAuthentications publickey
+Host github.com
     User git
-    Port 22
-    TCPKeepAlive yes
-    IdentitiesOnly yes
-    IdentityFile ~/.ssh/private_rsa
+    Hostname ssh.github.com
+    Port 443
+    IdentityFile ~/.ssh/id_rsa
 

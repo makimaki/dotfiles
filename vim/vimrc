@@ -115,7 +115,7 @@ nnoremap - <C-x>
 cabbrev sudo w !sudo tee %
 
 " ColorScheme
-colorscheme developer
+colorscheme edark
 set background=dark
 
 " extension
@@ -195,6 +195,8 @@ NeoBundle 'daisuzu/quickrun-hook-sphinx'
 "NeoBundle 'dhruvasagar/vim-table-mode'
 " renamer
 NeoBundle 'renamer.vim'
+" scala
+NeoBundle 'derekwyatt/vim-scala'
 
 " quickrun config
 let g:quickrun_config = {}
