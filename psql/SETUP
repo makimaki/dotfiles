@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# .psqlrcがなければシンボリックリンクを張る
+[ ! -h $HOME/.psqlrc ] && ln -s $DOTFILES/psql/psqlrc $HOME/.psqlrc
