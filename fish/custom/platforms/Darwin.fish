@@ -22,7 +22,7 @@ balias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim'
 
 # nodebrew
 set -gx PATH $HOME/.nodebrew/current/bin $PATH
-set -gx NODEBREW_ROOT=/usr/local/var/nodebrew
+set -gx NODEBREW_ROOT /usr/local/var/nodebrew
 
 # EC2
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.3.0/libexec"

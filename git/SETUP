@@ -4,6 +4,7 @@
 [ ! -h $HOME/.gitconfig ] && ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
 [ ! -h $HOME/.gitignore ] && ln -s $DOTFILES/git/gitignore $HOME/.gitignore
 [ ! -h $HOME/.gitattributes ] && ln -s $DOTFILES/git/gitattributes $HOME/.gitattributes
+[ ! -h $HOME/.gittemplate ] && ln -s $DOTFILES/git/commit_template $HOME/.gittemplate
 
 # 環境依存の.zshrcがなければファイルを作ってシンボリックリンクを張る
 [ ! -f $DOTFILES/git/gitconfig.$MACHINE ] && cp $DOTFILES/git/gitconfig.local $DOTFILES/git/gitconfig.$MACHINE
