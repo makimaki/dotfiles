@@ -178,10 +178,3 @@
 	diffFilter = diff-highlight
 [diff]
 	compactionHeuristic = true
-[gpg]
-	program = gpg
-[user]
-	signingkey = E8A55CAD
-[commit]
-	gpgsign = true
-	template = /Users/yuta_sakamaki/.gittemplate

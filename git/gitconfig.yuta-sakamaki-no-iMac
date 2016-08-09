@@ -1,3 +1,10 @@
 [user]
   name = Yuta Sakamaki
   email = yuta_sakamaki@albert2005.co.jp
+[gpg]
+	program = gpg
+[user]
+	signingkey = E8A55CAD
+[commit]
+	gpgsign = true
+	template = /Users/yuta_sakamaki/.gittemplate
