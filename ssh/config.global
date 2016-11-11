@@ -1,4 +1,5 @@
 Host *
+    ServerAliveInterval 300
     TCPKeepAlive yes
     IdentitiesOnly yes
 #    ControlMaster auto
@@ -33,5 +34,4 @@ Host github.com
     User git
     Hostname ssh.github.com
     Port 443
-    IdentityFile ~/.ssh/id_rsa
 

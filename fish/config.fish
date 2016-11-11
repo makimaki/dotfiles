@@ -14,7 +14,7 @@ set fish_path $HOME/dotfiles/oh-my-fish
 
 # Powerline
 if test -d $HOME/.vim/powerline
-    . $HOME/.vim/powerline/powerline/bindings/fish/powerline.conf
+    . $HOME/.vim/powerline/powerline/bindings/fish/powerline-setup.fish
 end
 
 # Path to your custom folder (default path is $FISH/custom)
