@@ -12,9 +12,13 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # vim
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
-balias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim'
+#export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+#balias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim'
 balias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim'
+
+# NeoVim
+export EDITOR=/usr/local/bin/nvim
+balias vi='env LANG=ja_JP.UTF-8 /usr/local/bin/nvim'
 
 # Java
 ## デフォルトエンコーディングSJISをUTF-8へ

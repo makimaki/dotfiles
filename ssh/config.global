@@ -5,6 +5,10 @@ Host *
 #    ControlMaster auto
 #    ControlPath ~/.ssh/master-%r@%h:%p.socket
 #    ControlPersist 30m
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    GSSAPIAuthentication  no
+    AddressFamily         inet
 
 Host server
     HostName 10.0.1.10
