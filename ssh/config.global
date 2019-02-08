@@ -1,14 +1,13 @@
 Host *
-    ServerAliveInterval 300
+    ServerAliveInterval 15
+    ServerAliveCountMax 3
     TCPKeepAlive yes
     IdentitiesOnly yes
-#    ControlMaster auto
-#    ControlPath ~/.ssh/master-%r@%h:%p.socket
-#    ControlPersist 30m
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
     GSSAPIAuthentication  no
     AddressFamily         inet
+    LogLevel FATAL
 
 Host server
     HostName 10.0.1.10
@@ -33,9 +32,4 @@ Host pfsense
 Host honeypot
     HostName 10.0.0.1
     User y.sakamaki
-
-Host github.com
-    User git
-    Hostname ssh.github.com
-    Port 443
 
