@@ -1,9 +1,12 @@
 alias where="command -v"
 
 # ls
-alias la="ls -a"
-alias lf="ls -F"
-alias ll="ls -l"
+#alias la="ls -a"
+#alias lf="ls -F"
+#alias ll="ls -l"
+alias ls="exa"
+alias ll="exa -ahl --git"
+alias lt="exa -T --git-ignore"
 
 # process
 # alias j="jobs -l"
@@ -96,3 +99,7 @@ alias be='bundle exec'
 
 # SSH
 alias ssh="cat ~/.ssh/config.global ~/.ssh/config.local > ~/.ssh/config; eval (which ssh)"
+
+function amm --description 'Scala REPL'
+    sh -c 'amm "$@"' amm $argv
+end

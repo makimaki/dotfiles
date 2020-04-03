@@ -8,11 +8,13 @@ export LESSCHARSET=utf-8
 append-to-path $HOME/bin
 append-to-path $HOME/dotfiles/bin
 
-export GOPATH=$HOME/golang
-export GOBIN=$GOPATH/bin
-export GOROOT=(go env GOROOT)
-append-to-path $GOROOT/bin
-append-to-path $GOBIN
+#export GOPATH=$HOME/golang
+#export GOBIN=$GOPATH/bin
+#export GOROOT=(go env GOROOT)
+#append-to-path $GOROOT/bin
+#append-to-path $GOBIN
+
+append-to-path (go env GOPATH)/bin
 
 # vim
 #export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim

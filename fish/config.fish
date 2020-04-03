@@ -3,12 +3,15 @@ if type direnv >/dev/null 2>&1
   eval (direnv hook fish)
 end
 
+# anyenv
+status --is-interactive; and source (anyenv init -|psub)
+
 # pyenv
-status --is-interactive; and source (pyenv init -|psub)
+#status --is-interactive; and source (pyenv init -|psub)
 status --is-interactive; and source (pyenv virtualenv-init -|psub)
 
-# nodebrew
-set -x PATH $HOME/.nodebrew/current/bin $PATH
+# nodenv
+#status --is-interactive; and source (nodenv init -|psub)
 
 # Path to your oh-my-fish.
 set fish_path $HOME/dotfiles/oh-my-fish
@@ -63,7 +66,7 @@ Plugin "php"
 #Plugin "pyenv"
 Plugin "python"
 Plugin "rails"
-Plugin "rbenv"
+#Plugin "rbenv"
 Plugin "replace"
 Plugin "ssh"
 Plugin "tmux"
@@ -71,3 +74,4 @@ Plugin "theme"
 
 
 set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
+
