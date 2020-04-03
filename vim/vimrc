@@ -174,8 +174,8 @@ NeoBundle 'tpope/vim-markdown'
 " ag
 NeoBundle 'rking/ag.vim'
 " powerline
-NeoBundle 'alpaca-tc/alpaca_powertabline'
-NeoBundle 'Lokaltog/powerline', {'rtp' : 'powerline/bindings/vim'}
+"NeoBundle 'alpaca-tc/alpaca_powertabline'
+"NeoBundle 'Lokaltog/powerline', {'rtp' : 'powerline/bindings/vim'}
 " emmet-vim C-y ,
 NeoBundle 'mattn/emmet-vim'
 " Dash
@@ -213,4 +213,4 @@ let g:quickrun_config['rst'] = {
 call neobundle#end()
 filetype plugin indent on
 
-let g:python3_host_prog = '~/.pyenv/shims/python3'
+let g:python3_host_prog = '~/.anyenv/envs/pyenv/shims/python3'
