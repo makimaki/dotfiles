@@ -1,0 +1,12 @@
+ruby 3.0.1
+#python 3.9.4 2.7.18 system
+nodejs 14.16.1
+golang 1.16.3
+java liberica-11.0.14+9 liberica-8u322+6
+scala 2.13.6 2.12.14
+sbt 1.5.3
+terraform 0.14.11
+tflint 0.33.2
+Bitwarden v1.16.0
+gitui 0.16.1
+kubectl 1.22.1
