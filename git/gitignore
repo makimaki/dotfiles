@@ -1,5 +1,8 @@
 .java-version
 .envrc
+.tool-versions
+node_modules
+npm-*
 
 # Created by https://www.gitignore.io
 
