@@ -1,0 +1,9 @@
+jorgebucaran/fisher
+oh-my-fish/theme-bobthefish
+PatrickF1/fzf.fish
+decors/fish-ghq
+jethrokuan/z
+franciscolourenco/done
+joseluisq/gitnow@2.8.0
+rodrigobdz/fish-apple-touchbar
+jorgebucaran/autopair.fish
