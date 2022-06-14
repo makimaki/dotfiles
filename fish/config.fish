@@ -1,13 +1,6 @@
-# direnv hook.
-if type direnv >/dev/null 2>&1
-  eval (direnv hook fish)
-end
-
-# gcloud
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
-
 # asdf
-source (brew --prefix asdf)/asdf.fish
+#source (brew --prefix asdf)/asdf.fish
+source /opt/asdf-vm/asdf.fish
 
 # anyenv
 #status --is-interactive; and source (anyenv init -|psub)
@@ -22,8 +15,16 @@ status --is-interactive; and pyenv virtualenv-init - | source
 # nodenv
 #status --is-interactive; and source (nodenv init -|psub)
 
+# direnv hook.
+if type direnv >/dev/null 2>&1
+  eval (direnv hook fish)
+end
+
+# gcloud
+#source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+
 # Path to your oh-my-fish.
-set fish_path $HOME/dotfiles/oh-my-fish
+#set fish_path $HOME/dotfiles/oh-my-fish
 
 # Environments
 . $HOME/.config/fish/env.fish
@@ -49,7 +50,7 @@ set -g theme_display_git yes
 set -g theme_display_hg yes
 set -g theme_display_virtualenv yes
 set -g theme_display_ruby no
-set -g theme_display_k8s_context yes
+#set -g theme_display_k8s_context yes
 set -g theme_powerline_fonts yes
 set -g theme_nerd_fonts no
 set -g theme_show_exit_status yes
@@ -90,17 +91,17 @@ set -g theme_date_format "+%Y-%m-%dT%H:%M:%S (%a)"
 
 fzf_configure_bindings --directory=\cf
 
-set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
-set -g fish_user_paths "$HOME/.cargo/bin" $fish_user_paths
-
-set -gx LDFLAGS "-L/usr/local/opt/openblas/lib -L/usr/local/opt/lapack/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
-set -gx CPPFLAGS "-I/usr/local/opt/openblas/include -I/usr/local/opt/lapack/include -I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
-
-if test -d (brew --prefix)"/share/fish/completions"
-    set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/completions
-end
-
-if test -d (brew --prefix)"/share/fish/vendor_completions.d"
-    set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
-end
-
+#set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
+#set -g fish_user_paths "$HOME/.cargo/bin" $fish_user_paths
+#
+#set -gx LDFLAGS "-L/usr/local/opt/openblas/lib -L/usr/local/opt/lapack/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+#set -gx CPPFLAGS "-I/usr/local/opt/openblas/include -I/usr/local/opt/lapack/include -I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+#
+#if test -d (brew --prefix)"/share/fish/completions"
+#    set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/completions
+#end
+#
+#if test -d (brew --prefix)"/share/fish/vendor_completions.d"
+#    set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+#end
+#
